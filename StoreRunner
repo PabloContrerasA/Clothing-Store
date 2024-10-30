@@ -1,0 +1,108 @@
+import java.util.Scanner;
+
+public class StoreRunner {
+  public static void main(String[] args) {
+
+    // Creates a Scanner object - feel free to delete if not using!
+    Scanner input = new Scanner(System.in);
+
+    // attributes order: price, color, fabric, areShorts, lengthMeasure, waistMeasure
+    Pants testPants = new Pants(35.99, "black","fabric", false, 30.2, 32.8); //Pants object is created
+    System.out.println("Pants");
+    System.out.println(" ");
+    System.out.println(testPants); //testPants object attributes are printed
+    System.out.println("---------------------------------------------");
+    System.out.println(" ");
+
+    
+     // attributes order: price, color, fabric, areHighTops, typeOfShoe, shoeSize
+    System.out.println("Shoes");
+    System.out.println(" ");
+    Shoes testShoes = new Shoes(165.99, "white","leather", false, "sneaker", 8.5); // Shoes object is created
+    System.out.println(testShoes); //testShoes object attributes are printed
+    System.out.println("---------------------------------------------");
+    System.out.println(" ");
+
+    
+    // attributes order: price, color, fabric, collarMeasure, isButtonDown, isLongSleeves
+    Shirt testShirt = new Shirt(30.50, "white", "cotton", 16.5, false, false ); //Shirt object is created
+    System.out.println("Shirt");
+    System.out.println(" ");
+    System.out.println(testShirt); //testShirt object attributes  are printed
+    System.out.println("---------------------------------------------");
+    System.out.println(" ");
+
+    
+    //attributes order: price, color, fabric, collarMeasure, isPuffy
+    Jacket testJacket = new Jacket(84.99, "black", "leather", 16.5, false);
+    System.out.println("Jacket");
+    System.out.println(" ");
+    System.out.println(testJacket); //testJacket object attributes  are printed
+    System.out.println("---------------------------------------------");
+    System.out.println(" ");
+
+    
+    //attributes order: price, color, fabric, collarMeasure, hasHoodie, hasZipper
+    Sweater testSweater = new Sweater(44.99, "white", "cotton", 16.5, true, false);
+    System.out.println("Sweater");
+    System.out.println(" ");
+    System.out.println(testSweater); //testSweater object attributes  are printed
+    System.out.println("---------------------------------------------");
+    
+    System.out.println(" ");
+    System.out.println("Discount Code: ");
+    System.out.println(" ");  
+    int discountInput = input.nextInt();
+    System.out.println("---------------------------------------------");
+
+    if (discountInput == 555) { //runs code to display the discounted prices only if the correct discount code is inputted
+
+    System.out.println(" ");
+    System.out.println(" ");
+    
+    System.out.println("DISCOUNTED PRICES");
+    System.out.println(" ");
+
+    System.out.println("Pants");
+    System.out.println(" ");
+    testPants.setPrice(25.99);
+    System.out.println(testPants);
+    System.out.println("---------------------------------------------");
+    System.out.println(" ");
+
+    System.out.println("Shoes");
+    System.out.println(" ");
+    testShoes.setPrice(124.99);
+    System.out.println(testShoes);
+    System.out.println("---------------------------------------------");
+    System.out.println(" ");
+
+    System.out.println("Shirt");
+    System.out.println(" ");
+    testShirt.setPrice(20.50);
+    System.out.println(testShirt);
+    System.out.println("---------------------------------------------");
+    System.out.println(" ");
+
+    System.out.println("Jacket");
+    System.out.println(" ");
+    testJacket.setPrice(70.75);
+    System.out.println(testJacket);
+    System.out.println("---------------------------------------------");
+    System.out.println(" ");
+
+    System.out.println("Sweater");
+    System.out.println(" ");
+    testSweater.setPrice(30.50);
+    System.out.println(testSweater);
+    System.out.println("---------------------------------------------");
+      
+    } else {
+      System.out.println("No discount");
+    }
+    
+    // Closes the Scanner object
+    input.close();
+    
+  }
+}
