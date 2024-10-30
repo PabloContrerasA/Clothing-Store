@@ -1,0 +1,27 @@
+public class Sweater extends Tops {
+  
+  private boolean hasHoodie;
+  private boolean hasZipper;
+
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Sweater() {
+    hasHoodie = false;
+    hasZipper = false;
+  }
+
+
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Sweater(double price, String color, String fabric, double collarMeasure, boolean hasHoodie, boolean hasZipper) {
+    super(price, color, fabric, collarMeasure);
+    this.hasHoodie = hasHoodie;
+    this.hasZipper =  hasZipper;
+  }
+  
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  public String toString() {
+    return super.toString() + "\nHas hoodie? " + hasHoodie + "\nHas zipper? " + hasZipper;
+  }
+}
