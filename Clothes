@@ -1,0 +1,46 @@
+public class Clothes { // represents all clothes that can be sold
+  
+  private double price; // represents the price of an object
+  private String color; // represents the color of an object
+  private String  fabric; //represents  the fabric used to make the objects
+  
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Clothes(){ // sets default attributes
+    this(10.75, "white", "cotton");
+  }
+  
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Clothes (double price, String color, String fabric) { //changes the variables price, color, and fabric to whatever they were set to when the object was created
+    this.price = price;
+    this.color = color;
+    this.fabric = fabric;
+  }
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  public double getPrice() {  // get method for price
+    return price;
+  }
+
+  
+  public String getColor() { // get method for color
+    return color;
+  }
+
+  
+  public String getFabric() { //get method for fabric
+    return fabric;
+  }
+  
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public void setPrice(double newPrice) { //sets price variable to a new value
+    price = newPrice;
+  }
+    
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  public String toString() {
+    return "Price: " + price + "\nColor: " + color + "\nFabric:  " + fabric;
+  }
+}
