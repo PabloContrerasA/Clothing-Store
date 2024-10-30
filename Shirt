@@ -1,0 +1,27 @@
+public class Shirt extends Tops  {
+  
+  private boolean isButtonDown;
+  private boolean hasLongSleeves;
+
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Shirt() {
+    isButtonDown = false;
+    hasLongSleeves = false;
+  }
+
+
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Shirt(double price, String color, String fabric, double collarMeasure, boolean isButtonDown, boolean hasLongSleeves) {
+    super(price, color, fabric, collarMeasure);
+    this.isButtonDown = isButtonDown;
+    this.hasLongSleeves = hasLongSleeves;
+  }
+  
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  public String toString() {
+    return super.toString() + "\nButton Down? " + isButtonDown + "\nLong Sleeves? " + hasLongSleeves;
+  }
+}
