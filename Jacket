@@ -1,0 +1,25 @@
+public class Jacket extends Tops  {
+
+  private boolean isPuffy;
+
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Jacket() {
+    isPuffy = true;
+  }
+
+
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Jacket(double price, String color, String fabric, double collarMeasure, boolean isPuffy) {
+    super(price, color, fabric, collarMeasure);
+    this.isPuffy = isPuffy;
+  }
+  
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  public String toString() {
+    return super.toString() + "\nPuffy jacket? " + isPuffy;
+  }
+}
+  
