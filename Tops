@@ -1,0 +1,25 @@
+public class Tops extends Clothes {
+  
+  private double collarMeasure;// variable for the collar measure of all tops 
+
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Tops() { //sets default collar measure
+    collarMeasure = 15.5;
+  }
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  public Tops(double price, String color, String fabric, double collarMeasure) {
+  super(price, color, fabric);
+  this.collarMeasure = collarMeasure;
+  }
+  
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // Despite the fact that the object Tops  will never be created by itself, it still needs a toString method  for its subclasses to inherit
+
+  public String toString() {
+  return super.toString() + "\nCollar Measure: " + collarMeasure;
+  }
+}
