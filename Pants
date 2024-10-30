@@ -1,0 +1,29 @@
+public class Pants extends Clothes {
+  
+  private boolean areShorts; // determines whether or not the pants are shorts
+  private double lengthMeasure; // variable for the lenght measure of pants
+  private double waistMeasure; // variable for the  waist measure of pants
+    
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  public Pants()  {
+  areShorts = false; // sets default pants to not be shorts
+  lengthMeasure = 30; // sets default length  measure to 30 inches
+  waistMeasure = 37.1; //sets default waist measure to 37.1
+  }
+  
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  public Pants (double price, String color, String fabric, boolean areShorts, double lengthMeasure, double waistMeasure) { //changes the variables price, color, fabric, areShorts, lengthMeasure, and waistMeasure to whatever they were set to when the object was created
+    super(price, color, fabric);
+    this.areShorts = areShorts;
+    this.lengthMeasure = lengthMeasure;
+    this.waistMeasure = waistMeasure;
+  }
+    
+  //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  public String toString() {
+  return super.toString() + "\nLength measure: " + lengthMeasure + "\nWaist measure: " + waistMeasure + "\nShorts? " + areShorts; // out puts all pants and clothes attributes for object in console
+    }
+}
