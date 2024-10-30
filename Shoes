@@ -1,0 +1,27 @@
+public class Shoes extends Clothes {
+  private boolean isHighTop; // variable for  whether or not a shoe object is a high top shoe
+  private String typeOfShoe; // variable for the type of shoe. Ex. sneaker, boots, formal
+  private double shoeSize; // variable for the size of the shoe
+
+      
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  public Shoes() { // set default values for the variables highTop, typeOfShoe, and shoeSize
+    isHighTop = false;
+    typeOfShoe = "sneaker";
+    shoeSize = 8.5; 
+  }
+        
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  public Shoes(double price, String color, String fabric, boolean isHighTop, String typeOfShoe, double shoeSize) { //changes the variables price, color, fabric, isHighTop, typeOfShoe, and shoeSize to whatever they were set to when obect was created
+    super(price, color,  fabric);
+    this.isHighTop = isHighTop;
+    this.typeOfShoe = typeOfShoe;
+    this.shoeSize = shoeSize;
+  }
+ //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  public String toString() {
+    return super.toString() + "\nHigh Top? " + isHighTop + "\nType of shoe: " +  typeOfShoe + "Size:  " + shoeSize; //outputs all shoe and clothes attrbutes in console
+  }
+}
